@@ -8,6 +8,8 @@ pygame.display.set_caption("пинг? понг!")
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 clock = pygame.time.Clock()
 
+ball.reset_ball()
+
 running = True
 
 while running:
@@ -16,6 +18,9 @@ while running:
             pygame.quit()
             exit()
 
+
+    ball.update_ball()
+    
 
 
 

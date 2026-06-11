@@ -20,8 +20,15 @@ def update_ball():
     if ball_rect.top <= 0 or ball_rect.bottom >= HEIGHT:
         ball_dy = -ball_dy
 
+def bounce_x():
+    global ball_dx
+    ball_dx = -ball_dx
+
+
+
+
+
 
 def draw_ball(screen):
     pygame.draw.ellipse(screen, BALL_COLOR, ball_rect)
-    
     
